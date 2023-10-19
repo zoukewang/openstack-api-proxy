@@ -12,8 +12,8 @@ openstack-api-proxy：https://proxyip:port/vimid/xx/xx
 
 * 其中vimip为每个VIM的API接口IP地址；port为VIM每个服务的端口号，VIM每个服务的端口号与proxy提供的端口号保持一致；proxyip为资源管理代理对VNFM提供可访问的IP地址；vimid为每个VIM统一规划的系统标识；xx/xx是每个服务url其他的信息，在映射过程中保持不变；
 
-{{tablelayout?rowsHeaderSource=Auto&colwidth=",181px,315px"}}
-^ 接口名称       ^ URL类型      | 端口号    |
+```
+  接口名称        | URL类型      | 端口号    |
 | 认证管理接口     | adminurl   | 35357  |
 | :::        | publicurl  | 5000   |
 | 镜像管理接口     | adminurl   | 9292   |
@@ -26,6 +26,7 @@ openstack-api-proxy：https://proxyip:port/vimid/xx/xx
 | :::        | publicurl  | 8776   |
 | 资源编排接口     | adminurl   | 8004   |
 | :::        | publicurl  | 8004   |
+```
 
 
 ## 部署方法
